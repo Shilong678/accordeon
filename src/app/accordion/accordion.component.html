@@ -1,0 +1,8 @@
+<div class="container">
+  <app-panel
+    *ngFor="let faq of faqs"
+    [id]="faq.id"
+    [question]="faq.question"
+    [answer]="faq.answer"
+  ></app-panel>
+</div>

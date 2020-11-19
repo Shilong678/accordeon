@@ -1,0 +1,15 @@
+.container {
+  margin: 2% auto;
+  width: 40vw;
+  box-shadow:  10px 10px 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+
+@media only screen and (max-width: 600px) {
+
+
+  .container {
+    width: 80vw;
+  }
+
+}

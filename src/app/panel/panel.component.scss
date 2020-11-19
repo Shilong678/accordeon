@@ -1,0 +1,50 @@
+.panel {
+    width: 100%;
+    border-bottom: 1px solid #000000;
+  
+  }
+  .question {
+    padding-left: 1%;
+    padding-right: 1%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .plusImage {
+    background-color: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .plusIcon {
+    width: 2em;
+    height: 2em;
+  }
+  
+  .answer {
+    padding: 1%;
+    font-family: 'Oswald';
+  }
+  
+  h3 {
+    font-family: 'Oswald-Bold';
+  }
+  
+  .qSubject {
+    flex-basis: 70%;
+  }
+  .subject {
+    font-family: 'Oswald-Light';
+  }
+  
+  @media only screen and (max-width: 600px) {
+    * {
+      font-size: small;
+    }
+  
+  
+  }

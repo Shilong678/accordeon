@@ -1,0 +1,26 @@
+<div class="panel">
+    <div
+      class="question"
+      (click)="togglePanel()"
+      [ngStyle]="{ 'background-color': isOpened ? '#e0e0e0' : '#ffffff' }"
+    >
+      <h3>Q {{ id }}</h3>
+      <div class="qSubject">
+        <p class="subject">{{ question }}</p>
+      </div>
+      <div class="plusImage">
+        <img
+          src="assets/plus-icon.svg"
+          class="plusIcon"
+          alt="open panel"
+          [@crossOpened]="isOpened ? 'expanded' : 'collapsed'"
+        />
+      </div>
+    </div>
+    <div class="answer" [@collapseExpand]="isOpened ? 'expanded' : 'collapsed'">
+      <p>
+        {{ answer }}
+      </p>
+    </div>
+  </div>
+  
